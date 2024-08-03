@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/eventListFragment">
+
+    <!-- Event List Fragment -->
+    <fragment
+        android:id="@+id/eventListFragment"
+        android:name="com.rahul.eventmanager.views.EventListFragment"
+        android:label="Event List"
+        tools:layout="@layout/event_list_fragment">
+        <action
+            android:id="@+id/action_eventListFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_eventListFragment_to_createEventFragment"
+            app:destination="@id/createEventFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Event Detail Fragment -->
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="com.rahul.eventmanager.views.EventDetailFragment"
+        android:label="Event Details"
+        tools:layout="@layout/event_detail_fragment">
+        <argument
+            android:name="event"
+            app:argType="com.rahul.eventmanager.model.room.entity.Event" />
+        <action
+            android:id="@+id/action_eventDetailFragment_to_createEventFragment"
+            app:destination="@id/createEventFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="event"
+                app:nullable="true"
+                app:argType="com.rahul.eventmanager.model.room.entity.Event" />
+        </action>
+    </fragment>
+
+    <!-- Create/Edit Event Fragment -->
+    <fragment
+        android:id="@+id/createEventFragment"
+        android:name="com.rahul.eventmanager.views.CreateEventFragment"
+        android:label="Create/Edit Event"
+        tools:layout="@layout/create_event_fragment">
+        <argument
+            android:name="event"
+            app:argType="com.rahul.eventmanager.model.room.entity.Event" />
+    </fragment>
+
+</navigation>

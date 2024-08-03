@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EventManager</string>
+    <string name="add_event">Add Event</string>
+    <string name="no_event_found">No Event Found</string>
+    <string name="date_and_time">Date and Time</string>
+    <string name="event_name">Event Name</string>
+    <string name="location">Location</string>
+    <string name="description">Description</string>
+    <string name="participants_comma_separated">Participants (comma separated)</string>
+    <string name="save_event">Save Event</string>
+</resources>
