@@ -21,6 +21,14 @@ Event Manager Android application built using Kotlin, MVVM and Room
   </tr>
  </table>
 
+ <br>
+
+## Model View ViewModel Architecture
+
+![](screenshots/mvvm.png)
+
+<br>
+
 <br>
 
 ## Built With 🛠
