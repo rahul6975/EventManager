@@ -43,3 +43,33 @@ Event Manager Android application built using Kotlin, MVVM and Room
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
 
 <br>
+
+<br>
+
+## Features 👨🏼‍💻
+
+- The User can create an Event by providing EventName, EventDate, EventLocation, EventParticipants.
+- The user can modify (edit) an exisiting Event.
+- The user can delete an exisiting Event.
+
+  <br>
+
+  <br>
+  
+  ## Project Structure and Files 📂
+
+   - Model
+      - Room
+         - Event.kt
+         - EventDao.kt
+         - EventDatabase.kt
+   - ViewModel
+      - EventViewModel.kt
+      - EventRepository.kt
+   - Views
+      - CreateEventFragment.kt
+      - EventListFragment.kt
+      - EventDetailFragment.kt
+      - MainActivity.kt
+  
+  
