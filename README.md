@@ -48,7 +48,7 @@ Event Manager Android application built using Kotlin, MVVM and Room
 
 ## Features 👨🏼‍💻
 
-- The User can create an Event by providing EventName, EventDate, EventLocation, EventParticipants.
+- The User can create an Event by providing EventName, EventDate, EventLocation, EventDescription, EventParticipants.
 - The user can modify (edit) an exisiting Event.
 - The user can delete an exisiting Event.
 
